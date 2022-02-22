@@ -1,0 +1,70 @@
+html,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #000;
+    font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Sans", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    min-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+}
+
+.pc_nav {
+    display: flex;
+    justify-content: space-between;
+}
+.pc_nav li {
+    width: 30%;
+    text-align: center;
+    white-space: nowrap;
+}
+.line {
+    margin: 0 1rem;
+    width: 4px;
+    background-color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: block;
+        max-width: 767px;
+    }
+    .pc_nav {
+        display: block;
+        text-align-last: left;
+    }
+
+    .pc_nav li {
+        flex-wrap: wrap;
+        border-bottom: 1px solid #000;
+        width: 100%;
+    }
+}
